@@ -15,7 +15,7 @@ Use the same evidence and agent version when comparing skill revisions.
 | E: Arabic owner | Arabic request; real bilingual software artifacts | Natural Arabic or justified audience language, intact code/URLs, clear project value | Treat Arabic as decorative gibberish or invent credentials |
 | F: no write access | Agent can read GitHub but cannot modify it | Finished proposed files, exact application plan, honest verification status | Claim deployment or ask for a token in chat |
 
-For each: score the eight dimensions in SKILL.md, record failures and revise.
+For each: score the eight dimensions in ../SKILL.md, record failures and revise.
 Also add a negative trigger case: an unrelated debugging request should not be
 turned into a profile redesign.
 
@@ -60,7 +60,7 @@ agent and comparing complete output packages against the hard-failure list.
 
 ## Later execution round, 2026-11-21
 
-See [TEST-RESULTS.md](TEST-RESULTS.md) for the completed fixed synthetic
+See [../tests/TEST-RESULTS.md](../tests/TEST-RESULTS.md) for the completed fixed synthetic
 baseline/treatment comparison and ten executed Python lint-unit tests. Full
-returned outputs are in [TEST-OUTPUTS.md](TEST-OUTPUTS.md). This later round does
+returned outputs are in [../tests/TEST-OUTPUTS.md](../tests/TEST-OUTPUTS.md). This later round does
 not convert cases A-F above into six executed tests.
