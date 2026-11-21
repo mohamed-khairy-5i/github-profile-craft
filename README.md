@@ -1,5 +1,7 @@
 # GitHub Profile Craft
 
+![GitHub Profile Craft: real work, clear profile](assets/BANNER.svg)
+
 ## Make the work memorable. Then make the profile look like it.
 
 A portable Agent Skill for turning a scattered GitHub presence into a clear,
@@ -109,6 +111,8 @@ github-profile-craft/
 │   ├── TEST-OUTPUTS.md        # Preserved returned artifacts
 │   └── TEST-RESULTS.md        # Executed checks and their limits
 └── assets/
+    ├── LOGO.svg               # Original document-and-proof mark
+    ├── BANNER.svg             # Matching repository banner
     ├── DEMO.svg               # Editable illustration, not a recorded run
     └── DEMO-MOBILE.svg        # Narrow illustration
 ```
