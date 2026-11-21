@@ -28,7 +28,7 @@ unrelated to a personal profile, or a general social-media growth request.
 For a supplied evidence snapshot, work offline: cite the supplied file paths
 and distinguish synthetic fixtures from real people. Never invent live URLs
 or claim current GitHub checks from a snapshot. For live work, use exact URLs.
-Read EVALS.md only when evaluating the skill, not on every profile request.
+Read references/EVALS.md only when evaluating the skill, not on every profile request.
 
 ## Delivery contract
 
@@ -42,8 +42,8 @@ An audit alone is not a completed result. Deliver:
 
 These filenames describe deliverables, not automatic uploads. Use equivalent
 artifacts if the host lacks file tools; say what could not be created.
-Read [EXAMPLE.md](EXAMPLE.md) only if you need an example of output specificity.
-For test work, read [EVALS.md](EVALS.md). Do not copy the
+Read [references/EXAMPLE.md](references/EXAMPLE.md) only if you need an example of output specificity.
+For test work, read [references/EVALS.md](references/EVALS.md). Do not copy the
 example person's positioning, handle, claims, or design into another profile.
 
 ## 1. Inspect before asking
@@ -156,7 +156,7 @@ social proof, or unsolicited posts.
 
 ## 5. Quality gate: revise weak output before showing it
 
-For a full package, run `python check_package.py OUTPUT_DIRECTORY`
+For a full package, run `python scripts/check_package.py OUTPUT_DIRECTORY`
 if Python is available. It checks file presence, placeholder markers, image
 alt text and some common unsupported embeds. It does NOT verify facts, links,
 rendering, approval, or output quality. Review those separately. If unavailable,
