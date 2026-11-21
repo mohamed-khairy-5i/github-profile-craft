@@ -32,13 +32,21 @@ Read references/EVALS.md only when evaluating the skill, not on every profile re
 
 ## Delivery contract
 
-An audit alone is not a completed result. Deliver:
+For a full-profile request, an audit alone is not a completed result. Deliver:
 
 1. `PROFILE-README.md`: a complete profile README, ready for review.
 2. `PROFILE-PLAN.md`: positioning, evidence ledger, proposed bio, pin order,
    ready-to-paste About descriptions/topics, before/after critique, and checks.
 3. If a visual materially helps and tools allow, an original local hero asset
    plus its editable source. Otherwise deliver a strong text-first README.
+
+For a narrow request, deliver only that requested part with its supporting
+sources and limits. Do not force the full two-file contract onto bio-only work.
+
+When returning files as Markdown code blocks, use an outer fence longer than
+any fence inside the file (for example four backticks around Markdown containing
+triple-backtick shell examples). Check that copying each block independently
+produces exactly one complete file. Never mix README remainder into the plan.
 
 These filenames describe deliverables, not automatic uploads. Use equivalent
 artifacts if the host lacks file tools; say what could not be created.
@@ -178,8 +186,16 @@ Grade each dimension 0 (missing), 1 (partial), or 2 (specific and complete):
 | Approval safety | Drafts clearly separate from proposed live mutations |
 
 Target at least 13/16 as a self-review heuristic, not an objective benchmark.
+Cross-check every factual phrase in the hook, bio, project descriptions and
+metadata against the evidence ledger. A caveat in the plan does not repair an
+unsupported assertion in public copy. Remove or qualify unverified cost,
+production-readiness, compatibility and benchmark claims where they appear.
+Do not generalize one project's feature to all of the person's work.
+
 A zero in evidence, honesty, or approval safety blocks delivery as ready.
-Do not report a perfect score instead of explaining defects. Fix weak parts.
+Do not report a perfect score instead of explaining defects. Missing rendering
+checks cannot earn full visual-verification credit; a broken copyable artifact
+cannot earn full reuse-readiness credit. Fix weak parts.
 
 ## 6. Verify and stop at the right boundary
 
