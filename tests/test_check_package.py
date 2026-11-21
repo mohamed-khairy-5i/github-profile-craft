@@ -57,6 +57,30 @@ class LintTests(unittest.TestCase):
         self.put('# نور\n\nأدوات صغيرة لسطر الأوامر.\n')
         self.assertTrue(check(self.root)['passed'])
 
+    def test_unclosed_backtick_fence(self):
+        self.put('# Noor\n```bash\necho hello\n')
+        self.assertFalse(check(self.root)['passed'])
+
+    def test_unclosed_plan_fence(self):
+        (self.root / 'PROFILE-PLAN.md').write_text('Plan\n~~~text\nexample\n')
+        self.assertFalse(check(self.root)['passed'])
+
+    def test_nested_shorter_fence_is_content(self):
+        self.put('````markdown\n```bash\necho hello\n```\n````\n')
+        self.assertTrue(check(self.root)['passed'])
+
+    def test_tilde_fence(self):
+        self.put('~~~text\nexample\n~~~\n')
+        self.assertTrue(check(self.root)['passed'])
+
+    def test_fence_closer_cannot_have_language(self):
+        self.put('```text\nexample\n```python\n')
+        self.assertFalse(check(self.root)['passed'])
+
+    def test_inline_backticks_are_not_fence(self):
+        self.put('Use ``` inline, not a block.\n')
+        self.assertTrue(check(self.root)['passed'])
+
     def test_does_not_pretend_fact_checking(self):
         self.put('# Invented\nUsed by a billion people.')
         self.assertTrue(check(self.root)['passed'])
