@@ -1,5 +1,5 @@
 ---
-name: github-profile-tuner
+name: repoproofloom
 description: >-
   Build a distinctive, evidence-backed GitHub profile upgrade, not a badge dump.
   Use for improving a GitHub profile, profile README, bio, pinned repositories,
@@ -12,7 +12,7 @@ metadata:
   version: "2.1"
 ---
 
-# GitHub Profile Tuner
+# RepoProofloom
 
 Make a visitor understand the builder's distinctive work, see proof, and know
 what to try next. Make the result worth opening, not merely more decorated.
