@@ -12,12 +12,12 @@ project descriptions/topics, an evidence ledger, and a verification checklist.
 Nothing changes on the actual profile until the owner approves.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="DEMO-MOBILE.svg">
-  <img alt="Illustrative synthetic before and after, with specific project behavior and a useful next step" src="DEMO.svg">
+  <source media="(max-width: 600px)" srcset="assets/DEMO-MOBILE.svg">
+  <img alt="Illustrative synthetic before and after, with specific project behavior and a useful next step" src="assets/DEMO.svg">
 </picture>
 
-Illustration, not a recorded model run. [Research and comparison](RESEARCH.md) ·
-[Executed checks and limits](TEST-RESULTS.md) · [Trial and adoption plan](ADOPTION.md)
+Illustration, not a recorded model run. [Research and comparison](references/RESEARCH.md) ·
+[Executed checks and limits](tests/TEST-RESULTS.md) · [Trial and adoption plan](references/ADOPTION.md)
 
 ## Use it
 
@@ -72,8 +72,8 @@ Previously named RepoProofloom and, earlier, GitHub Profile Tuner. Same Skill, e
 | Optional polish | First-screen, mobile, accessibility and link checks |
 | No test fixtures | Six acceptance scenarios and a worked dry run |
 
-[Read the worked example](EXAMPLE.md) to see the level of specificity.
-[Read the evaluation cases](EVALS.md) to test an agent's output.
+[Read the worked example](references/EXAMPLE.md) to see the level of specificity.
+[Read the evaluation cases](references/EVALS.md) to test an agent's output.
 
 ## What it will not do
 
@@ -83,30 +83,43 @@ Previously named RepoProofloom and, earlier, GitHub Profile Tuner. Same Skill, e
 - Install tracking widgets, buy engagement, or send unsolicited launch posts.
 
 The output is a draft package. A profile preview is not a deployed profile.
-See TEST-RESULTS.md for executed checks. Passing lint or a small fixture is not
+See tests/TEST-RESULTS.md for executed checks. Passing lint or a small fixture is not
 cross-agent certification or evidence of star growth.
 
-## Files
+## Repository structure
 
-- `SKILL.md`: the reusable workflow and output contract.
-- `EXAMPLE.md`: evidence-backed example using public project descriptions and
-  limited code inspection, with a clear verification boundary.
-- `EVALS.md`: acceptance fixtures, scoring, and the test record.
-- `check_package.py`: dependency-free offline output lint.
-- `test_check_package.py`: regression tests for that script, not model tests.
-- `TEST-FIXTURE.md` and `TEST-RESULTS.md`: fixed input and actual test boundaries.
-- `RESEARCH.md`: sourced comparison and design decisions.
-- `ADOPTION.md`: trial prompt, proposed demo recording and measurement plan.
-- `DEMO.svg` and `DEMO-MOBILE.svg`: editable illustrative visuals, not execution recordings.
-- `LICENSE`: MIT.
+The root stays small. `SKILL.md` is the entry point; keep the complete folder
+when installing so its relative references and optional script remain available.
+
+```text
+github-profile-craft/
+├── SKILL.md                  # Agent workflow and output contract
+├── README.md                 # Overview, installation and checks
+├── LICENSE                   # MIT
+├── references/               # Supporting guidance, loaded when needed
+│   ├── EXAMPLE.md             # Worked profile package
+│   ├── EVALS.md               # Acceptance cases and scoring
+│   ├── RESEARCH.md            # Sources and design decisions
+│   └── ADOPTION.md            # Trial prompts and adoption plan
+├── scripts/
+│   └── check_package.py       # Dependency-free output lint
+├── tests/
+│   ├── test_check_package.py  # Lint regression tests, not model tests
+│   ├── TEST-FIXTURE.md        # Fixed synthetic input
+│   ├── TEST-OUTPUTS.md        # Preserved returned artifacts
+│   └── TEST-RESULTS.md        # Executed checks and their limits
+└── assets/
+    ├── DEMO.svg               # Editable illustration, not a recorded run
+    └── DEMO-MOBILE.svg        # Narrow illustration
+```
 
 ## Optional checks
 
 From the skill directory:
 
 ```sh
-python test_check_package.py
-python check_package.py /path/to/generated-output
+python -m unittest discover -s tests -p "test_*.py"
+python scripts/check_package.py /path/to/generated-output
 ```
 
 The first command tests the lint script. The second checks the two output files.
