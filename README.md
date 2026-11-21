@@ -11,6 +11,11 @@ evidence-backed showcase. Not another wall of badges. Not a star generator.
 project descriptions/topics, an evidence ledger, and a verification checklist.
 Nothing changes on the actual profile until the owner approves.
 
+![Illustrative synthetic before and after, with specific project behavior and a useful next step](DEMO.svg)
+
+Illustration, not a recorded model run. [Research and comparison](RESEARCH.md) ·
+[Executed checks and limits](TEST-RESULTS.md) · [Trial and adoption plan](ADOPTION.md)
+
 ## Use it
 
 Give the folder to an agent that supports the open `SKILL.md` format and say:
@@ -25,8 +30,7 @@ Or in Arabic:
 
 ### Install
 
-Clone this repository, then place the **whole folder**, including `EXAMPLE.md`
-and `EVALS.md`, in your agent's documented skills directory. Keep the folder
+Clone this repository, then place the **whole folder**, including the supporting Markdown files and optional lint script, in your agent's documented skills directory. Keep the folder
 name `github-profile-tuner`. No package installation or API key is required by
 the skill itself. Your agent needs its own GitHub reading capability.
 
@@ -35,7 +39,17 @@ agent needs authorized repository access or a local copy. Do not paste access
 tokens into prompts. Installation paths and support vary by agent version;
 use that agent's current documentation, rather than assuming one universal path.
 
-## What changed in v2
+## What changed in v2.1
+
+- Narrow requests stay narrow. A bio-only request does not force a full redesign.
+- Local evidence snapshots work without invented live URLs.
+- Examples and evaluations load only when needed.
+- Optional Python lint checks completeness and common Markdown mistakes. It does
+  not verify facts, links, rendering, approval or model quality.
+- Public-source comparison, a reproducible fixture and an adoption plan make
+  limitations visible rather than claiming universal superiority.
+
+## Earlier v2 changes
 
 | Before | Now |
 |---|---|
@@ -56,7 +70,8 @@ use that agent's current documentation, rather than assuming one universal path.
 - Install tracking widgets, buy engagement, or send unsolicited launch posts.
 
 The output is a draft package. A profile preview is not a deployed profile.
-Static checks and one worked dry run are not cross-agent certification.
+See TEST-RESULTS.md for executed checks. Passing lint or a small fixture is not
+cross-agent certification or evidence of star growth.
 
 ## Files
 
@@ -64,7 +79,25 @@ Static checks and one worked dry run are not cross-agent certification.
 - `EXAMPLE.md`: evidence-backed example using public project descriptions and
   limited code inspection, with a clear verification boundary.
 - `EVALS.md`: acceptance fixtures, scoring, and the test record.
+- `check_package.py`: dependency-free offline output lint.
+- `test_check_package.py`: regression tests for that script, not model tests.
+- `TEST-FIXTURE.md` and `TEST-RESULTS.md`: fixed input and actual test boundaries.
+- `RESEARCH.md`: sourced comparison and design decisions.
+- `ADOPTION.md`: trial prompt, proposed demo recording and measurement plan.
+- `DEMO.svg`: editable illustrative visual, not an execution recording.
 - `LICENSE`: MIT.
+
+## Optional checks
+
+From the skill directory:
+
+```sh
+python test_check_package.py
+python check_package.py /path/to/generated-output
+```
+
+The first command tests the lint script. The second checks the two output files.
+Neither command runs a model, validates a biography or measures reach.
 
 ## Sources and credit
 
