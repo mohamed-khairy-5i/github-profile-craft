@@ -44,7 +44,7 @@ One thin synthetic profile with inflated marketing and private source material
 checks several failure modes cheaply. It does not replace live accounts,
 Arabic/bilingual cases, visual-overload cases or different commercial agents.
 
-See TEST-RESULTS.md for what actually ran. Fixture definitions are not test passes.
+See ../tests/TEST-RESULTS.md for what actually ran. Fixture definitions are not test passes.
 
 ## Source ledger
 
