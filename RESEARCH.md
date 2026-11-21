@@ -23,7 +23,7 @@ adoption. No claim of best-in-market or guaranteed reach is justified.
 
 ## Structure decisions
 
-1. Keep name/description in YAML; name remains repoproofloom.
+1. Keep name/description in YAML; name remains github-profile-craft.
 2. Keep the main file below the standard's 500-line recommendation. Use direct
    references with explicit load conditions, rather than requiring every example
    and evaluation guide on every profile request.
