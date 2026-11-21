@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="930" viewBox="0 0 600 930">
+<rect width="600" height="930" fill="#f5f3ee"/>
+<text x="36" y="51" font-family="DejaVu Sans" font-size="17" font-weight="bold" fill="#284744">GITHUB PROFILE TUNER</text>
+<text x="36" y="103" font-family="DejaVu Sans" font-size="32" font-weight="bold" fill="#122d2b">Show the work.</text>
+<text x="36" y="145" font-family="DejaVu Sans" font-size="32" font-weight="bold" fill="#122d2b">Skip the filler.</text>
+<text x="36" y="185" font-family="DejaVu Sans" font-size="19" fill="#4c625f">Illustrative synthetic draft, not a recorded run.</text>
+<rect x="28" y="216" width="544" height="158" rx="16" fill="white" stroke="#d4dcd6"/>
+<text x="50" y="254" font-family="DejaVu Sans" font-size="17" font-weight="bold" fill="#7e554e">BEFORE</text>
+<text x="50" y="300" font-family="DejaVu Sans" font-size="25" fill="#233d39">Passionate developer</text>
+<text x="50" y="338" font-family="DejaVu Sans" font-size="25" fill="#233d39">changing the future.</text>
+<rect x="28" y="394" width="544" height="428" rx="16" fill="white" stroke="#a8c5b7"/>
+<text x="50" y="434" font-family="DejaVu Sans" font-size="17" font-weight="bold" fill="#2d6658">AFTER / SPECIFIC PROJECT VALUE</text>
+<text x="50" y="481" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#173d34">ClipCheck</text>
+<text x="50" y="526" font-family="DejaVu Sans" font-size="24" fill="#465f54">Find exact duplicate lines</text>
+<text x="50" y="561" font-family="DejaVu Sans" font-size="24" fill="#465f54">in a folder's .txt files.</text>
+<text x="50" y="606" font-family="DejaVu Sans" font-size="23" fill="#465f54">Print matches. Leave files unchanged.</text>
+<rect x="50" y="637" width="500" height="63" rx="9" fill="#edf4ee"/>
+<text x="66" y="677" font-family="DejaVu Sans Mono" font-size="22" fill="#204b3d">python clipcheck.py ./notes</text>
+<text x="50" y="746" font-family="DejaVu Sans" font-size="20" fill="#465f54">Supplied source summary.</text>
+<text x="50" y="779" font-family="DejaVu Sans" font-size="20" fill="#465f54">Test execution not verified.</text>
+<text x="36" y="869" font-family="DejaVu Sans" font-size="21" font-weight="bold" fill="#193e35">Finished draft. Checkable claims.</text>
+<text x="36" y="902" font-family="DejaVu Sans" font-size="20" fill="#4c625f">No profile changes without approval.</text>
+</svg>
