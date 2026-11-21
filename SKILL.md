@@ -9,7 +9,7 @@ description: >-
 license: MIT
 compatibility: Requires an agent that reads SKILL.md. GitHub read access or supplied repository evidence is needed for personalization; write and image tools are optional.
 metadata:
-  version: "2.0"
+  version: "2.1"
 ---
 
 # GitHub Profile Tuner
@@ -17,6 +17,18 @@ metadata:
 Make a visitor understand the builder's distinctive work, see proof, and know
 what to try next. Make the result worth opening, not merely more decorated.
 Never promise reach, stars, rankings, or hiring outcomes.
+
+## Scope and routing
+
+Use this for a personal GitHub profile package or an explicitly requested part
+of it. A bio-only request gets bio proposals and evidence, not an unsolicited
+full redesign. Do not activate for debugging code, repository documentation
+unrelated to a personal profile, or a general social-media growth request.
+
+For a supplied evidence snapshot, work offline: cite the supplied file paths
+and distinguish synthetic fixtures from real people. Never invent live URLs
+or claim current GitHub checks from a snapshot. For live work, use exact URLs.
+Read EVALS.md only when evaluating the skill, not on every profile request.
 
 ## Delivery contract
 
@@ -30,8 +42,8 @@ An audit alone is not a completed result. Deliver:
 
 These filenames describe deliverables, not automatic uploads. Use equivalent
 artifacts if the host lacks file tools; say what could not be created.
-Read [EXAMPLE.md](EXAMPLE.md) for output specificity and
-[EVALS.md](EVALS.md) for test cases and acceptance gates. Do not copy the
+Read [EXAMPLE.md](EXAMPLE.md) only if you need an example of output specificity.
+For test work, read [EVALS.md](EVALS.md). Do not copy the
 example person's positioning, handle, claims, or design into another profile.
 
 ## 1. Inspect before asking
@@ -143,6 +155,14 @@ one. No automated outreach, bought stars, follow/unfollow tactics, fabricated
 social proof, or unsolicited posts.
 
 ## 5. Quality gate: revise weak output before showing it
+
+For a full package, run `python check_package.py OUTPUT_DIRECTORY`
+if Python is available. It checks file presence, placeholder markers, image
+alt text and some common unsupported embeds. It does NOT verify facts, links,
+rendering, approval, or output quality. Review those separately. If unavailable,
+perform the same checks manually and state that the script was not run.
+
+
 
 Grade each dimension 0 (missing), 1 (partial), or 2 (specific and complete):
 
