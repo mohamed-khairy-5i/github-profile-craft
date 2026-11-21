@@ -1,4 +1,4 @@
-# RepoProofloom
+# GitHub Profile Craft
 
 ## Make the work memorable. Then make the profile look like it.
 
@@ -34,12 +34,12 @@ Or in Arabic:
 ### Install
 
 ```sh
-git clone https://github.com/mohamed-khairy-5i/repoproofloom.git
+git clone https://github.com/mohamed-khairy-5i/github-profile-craft.git
 ```
 
 
 Clone this repository, then place the **whole folder**, including the supporting Markdown files and optional lint script, in your agent's documented skills directory. Keep the folder
-name `repoproofloom`. No package installation or API key is required by
+name `github-profile-craft`. No package installation or API key is required by
 the skill itself. Your agent needs its own GitHub reading capability.
 
 This repository is public and MIT-licensed. Clone it or download a local copy.
@@ -49,8 +49,8 @@ one universal path.
 
 ## Name
 
-RepoProofloom weaves proof from real repositories into a clear profile.
-Previously named GitHub Profile Tuner. Same Skill, examples and tests.
+GitHub Profile Craft turns proof from real repositories into a clear, distinctive profile.
+Previously named RepoProofloom and, earlier, GitHub Profile Tuner. Same Skill, examples and tests.
 
 ## What changed in v2.1
 
