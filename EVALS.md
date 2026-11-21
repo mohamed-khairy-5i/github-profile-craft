@@ -57,3 +57,10 @@ What was **not** done:
 Treat this as v2 with one grounded worked example and structural checks, not a
 proven universal improvement. The next useful test is running A-F with a second
 agent and comparing complete output packages against the hard-failure list.
+
+## Later execution round, 2026-11-21
+
+See [TEST-RESULTS.md](TEST-RESULTS.md) for the completed fixed synthetic
+baseline/treatment comparison and ten executed Python lint-unit tests. Full
+returned outputs are in [TEST-OUTPUTS.md](TEST-OUTPUTS.md). This later round does
+not convert cases A-F above into six executed tests.
