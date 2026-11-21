@@ -50,7 +50,7 @@ A proposed recording, not a claim that a video was made:
 
 Use the exact captured output, not a manually improved result presented as a
 raw model run. Keep text large enough to read on a phone. Do not show private
-sources, contact details or real account tokens. DEMO.svg is an illustrative
+sources, contact details or real account tokens. ../assets/DEMO.svg is an illustrative
 summary, not an execution recording or a GitHub UI screenshot.
 
 ## Launch gates, only after owner approval
@@ -70,7 +70,7 @@ summary, not an execution recording or a GitHub UI screenshot.
    https://skills.sh/docs . Do not claim a listing or support badge exists yet.
 
 Do not paste an untested universal npx command into the README. A standard
-SKILL.md file does not prove compatibility with every agent or installer.
+../SKILL.md file does not prove compatibility with every agent or installer.
 
 ## Small measurement plan
 
