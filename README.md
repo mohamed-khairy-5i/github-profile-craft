@@ -1,46 +1,79 @@
-# github-profile-tuner
+# GitHub Profile Tuner
 
-An Agent Skill that audits and upgrades a GitHub profile: the profile README,
-bio, links, pinned repos, and top-repo metadata. Built to be handed to any
-agent that reads the open `SKILL.md` format.
+## Make the work memorable. Then make the profile look like it.
 
-Give it to your agent and say "ظبط بروفايلي على جيت هاب" or "level up my
-GitHub profile" - it audits what exists, scores it against a checklist, picks
-one coherent style, and rewrites substance-first.
+A portable Agent Skill for turning a scattered GitHub presence into a clear,
+evidence-backed showcase. Not another wall of badges. Not a star generator.
 
-## Install
+**Input:** a GitHub username or supplied project evidence.
 
-Clone or copy this folder into your agent's skills directory:
+**Output:** a finished profile README, a concise bio, a reasoned pin order,
+project descriptions/topics, an evidence ledger, and a verification checklist.
+Nothing changes on the actual profile until the owner approves.
 
-- Claude Code: `~/.claude/skills/github-profile-tuner`
-- Cursor: `~/.cursor/skills/github-profile-tuner`
-- OpenAI Codex: `~/.codex/skills/github-profile-tuner`
-- Any other agent that reads SKILL.md files: its documented skills directory
+## Use it
 
-```bash
-git clone https://github.com/mohamed-khairy-5i/github-profile-tuner \
-  <skills-dir>/github-profile-tuner
-```
+Give the folder to an agent that supports the open `SKILL.md` format and say:
 
-No dependencies. The whole skill is `SKILL.md`.
+> Improve my GitHub profile. Lead with what makes my real work distinctive.
+> Produce the finished files for review; do not change my live profile yet.
 
-## What it does
+Or in Arabic:
 
-1. Verifies the profile-README mechanic (repo named exactly your username,
-   public, README.md on the default branch).
-2. Audits your README, bio, pinned repos, and top repos.
-3. Scores against a checklist (first 15 lines, contact path, alt text, stale
-   widgets, leftover placeholders).
-4. Picks one archetype that matches your upkeep tolerance.
-5. Rewrites substance-first, shows you the draft, then helps you ship it.
-6. Verifies rendering in light and dark themes and on mobile.
+> ظبط بروفايلي وخلي الشغل الحقيقي هو اللي يشد الناس. طلّعلي نسخة كاملة
+> أراجعها، مش شوية نصايح وبادچات. متعدّلش البروفايل قبل ما أوافق.
 
-## Credits
+### Install
 
-Approach grounded in public work, notably
-[boffti/github-profile-readme](https://github.com/boffti/github-profile-readme)
-(nine archetypes, 520-profile survey) and the open
-[Agent Skills](https://agentskills.io) format.
+Clone this repository, then place the **whole folder**, including `EXAMPLE.md`
+and `EVALS.md`, in your agent's documented skills directory. Keep the folder
+name `github-profile-tuner`. No package installation or API key is required by
+the skill itself. Your agent needs its own GitHub reading capability.
+
+This repository is private unless its owner changes that setting. Another
+agent needs authorized repository access or a local copy. Do not paste access
+tokens into prompts. Installation paths and support vary by agent version;
+use that agent's current documentation, rather than assuming one universal path.
+
+## What changed in v2
+
+| Before | Now |
+|---|---|
+| An audit and a presentation archetype | Finished README plus profile package |
+| Generic style choices | One angle derived from the builder's actual work |
+| Repository marketing repeated as fact | Observed, owner-stated, unverified evidence separated |
+| Optional polish | First-screen, mobile, accessibility and link checks |
+| No test fixtures | Six acceptance scenarios and a worked dry run |
+
+[Read the worked example](EXAMPLE.md) to see the level of specificity.
+[Read the evaluation cases](EVALS.md) to test an agent's output.
+
+## What it will not do
+
+- Invent users, clients, titles, test results, benchmarks, or testimonials.
+- Promise stars, reach, search ranking, or hiring outcomes.
+- Publish private information or change your profile without approval.
+- Install tracking widgets, buy engagement, or send unsolicited launch posts.
+
+The output is a draft package. A profile preview is not a deployed profile.
+Static checks and one worked dry run are not cross-agent certification.
+
+## Files
+
+- `SKILL.md`: the reusable workflow and output contract.
+- `EXAMPLE.md`: evidence-backed example using public project descriptions and
+  limited code inspection, with a clear verification boundary.
+- `EVALS.md`: acceptance fixtures, scoring, and the test record.
+- `LICENSE`: MIT.
+
+## Sources and credit
+
+Built against the [Agent Skills specification](https://agentskills.io/specification)
+and [skill-authoring guidance](https://agentskills.io/skill-creation/best-practices).
+Profile mechanics follow [GitHub's own documentation](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
+The earlier version drew presentation inspiration from
+[boffti/github-profile-readme](https://github.com/boffti/github-profile-readme).
+No third-party benchmark claims are implied by this skill.
 
 ## License
 
