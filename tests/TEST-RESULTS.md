@@ -9,9 +9,9 @@
 2. The author reviewed both returned packages against the fixed rubric. This is
    a separate-run comparison, but not blinded or independently graded. Both
    executions were under the same service, not different commercial agent products.
-3. Ten Python unit tests for check_package.py executed and passed. These test the
+3. Ten Python unit tests for ../scripts/check_package.py executed and passed. These test the
    script, not ten profiles or ten model executions.
-4. check_package.py ran against both returned packages. Both passed. This is
+4. ../scripts/check_package.py ran against both returned packages. Both passed. This is
    expected: the lint intentionally cannot detect an unsupported biography claim.
 5. YAML metadata, name/directory match, name/description lengths, local Markdown
    references, and the main file's line budget were checked. At this revision:
@@ -19,7 +19,7 @@
    validator, package installer or commercial-agent integration was executed.
 6. The treatment returned local light/dark desktop and 390px previews. The
    readable contact sheet was inspected. This is not GitHub's exact renderer.
-   The illustrative DEMO.svg was separately rendered and inspected.
+   The illustrative ../assets/DEMO.svg was separately rendered and inspected.
 
 Full fixed input: TEST-FIXTURE.md. Captured artifacts: TEST-OUTPUTS.md.
 No project code ran. No live profile, bio, pins, topics or visibility changed.
@@ -73,15 +73,17 @@ universal superiority. Before promoting the Skill as broadly tested, run the
 remaining cases on real consented profiles, include Arabic, use a second agent
 product, and grade without revealing which output used the Skill.
 
-The original EVALS.md cases A-F remain fixtures, not six executed profile tests.
+The original ../references/EVALS.md cases A-F remain fixtures, not six executed profile tests.
 The earlier author-run real-project example remains a separate dry run, not part
 of this two-output synthetic comparison.
 
 ## Reproduce the deterministic checks
 
+From the repository root:
+
 ```sh
-python test_check_package.py
-python check_package.py /path/to/output
+python -m unittest discover -s tests -p "test_*.py"
+python scripts/check_package.py /path/to/output
 ```
 
 The fixture comparison requires an actual agent execution in fresh contexts;
