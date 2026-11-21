@@ -1,6 +1,9 @@
 # GitHub Profile Craft
 
-![GitHub Profile Craft: real work, clear profile](assets/BANNER.svg)
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/BANNER-MOBILE.svg">
+  <img alt="GitHub Profile Craft: real work, clear profile" src="assets/BANNER.svg">
+</picture>
 
 ## Make the work memorable. Then make the profile look like it.
 
@@ -113,6 +116,7 @@ github-profile-craft/
 └── assets/
     ├── LOGO.svg               # Original document-and-proof mark
     ├── BANNER.svg             # Matching repository banner
+    ├── BANNER-MOBILE.svg      # Readable narrow-screen banner
     ├── DEMO.svg               # Editable illustration, not a recorded run
     └── DEMO-MOBILE.svg        # Narrow illustration
 ```
