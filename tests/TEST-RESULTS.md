@@ -89,3 +89,119 @@ python scripts/check_package.py /path/to/output
 The fixture comparison requires an actual agent execution in fresh contexts;
 neither Python command performs it. Use the same input, preserve failures and
 full outputs, and do not substitute hand-edited copy for a captured run.
+
+
+## Public-source usability round, 2026-11-21
+
+**Verdict: useful draft workflow, not ready for a stable-release or cross-agent claim.**
+
+### What actually ran
+
+- Fresh anonymous clone at `86ef0e87b6640692fdc5ef5a905809bdcaa6f783`.
+- Gemini web, mode displayed as `Neon`, with the full Skill manually supplied as
+  prompt context. Exact underlying model revision was not exposed. This is NOT
+  Gemini CLI, native skill discovery, Claude Code, Codex or Cursor testing.
+- Three fresh public-source snapshots: [mohamed-khairy-5i](https://github.com/mohamed-khairy-5i)
+  (Arabic full package), [boffti](https://github.com/boffti) (bio only), and
+  [davila7](https://github.com/davila7) (English full package).
+  Two relevant public repos per account were inspected via README and source/config.
+  Snapshot excerpts were explicitly partial; no repository programs/tests/demos ran.
+- One same-product no-Skill baseline for Mohamed's same evidence/request.
+- One targeted revised-Skill rerun for that same Arabic evidence/request.
+- Ten existing Python lint unit tests, followed by six new fence regressions:
+  all sixteen passed. These are deterministic lint checks, not sixteen model runs.
+
+No account signup, spend, outreach, profile deployment, traffic measurement,
+private source evidence, or release was part of this round. Third-party profiles
+are public test inputs, not endorsements or owner-approved profile rewrites.
+The test owner selected examples and reviewed outputs, without blinding,
+randomization, repeated sampling or an independent grader. No win-rate or causal
+improvement estimate is supported. Manually supplied context and explicit safety
+instructions also limit what can be attributed to the Skill alone.
+
+### First-pass findings, kept rather than rewritten as successes
+
+| Case | Observed result | Material limitation |
+|---|---|---|
+| Arabic full package with Skill | Specific project/code details, evidence ledger, local BroadcastChannel limitation, removed widget wall | Two copyable blocks were broken by nested triple-backtick fences. Hook/bio repeated unverified no-API-cost language while the plan qualified it. Self-score was 16/16 despite defects. Not ready. |
+| Bio-only with Skill | Two distinct bios, lengths recomputed as 128 and 144 characters; no unsolicited full README; unverified impact metrics excluded | Current bio field limit was not checked in-product; source scope remains partial. |
+| English full package with Skill | Two complete independently copyable files, implementation-linked project descriptions; unverified benchmark numbers and supporter claims omitted | Dense technical feature list on mobile; live destinations and exact GitHub rendering not checked by the model. Author review is not independent certification. |
+| Arabic no-Skill baseline | Full draft and plan; no live changes | Retained tracking/widget clutter, repeated zero-cost/platform-compatibility marketing as fact, left Arabic fill-in sections. It also passed the old minimal lint. |
+
+### Reproducible failure evidence
+
+The original Arabic first code block was 959 Unicode characters and ended
+inside a bash fence. Copying the two returned blocks as the requested filenames
+made the old linter return `passed: true`. The revised linter reports an unclosed
+fence in each file. No source output was silently repaired for this check.
+
+First-block final lines, preserved from the returned artifact:
+
+````text
+
+**جرّبه الآن:**
+```bash
+npx skills add mohamed-khairy-5i/trigger-doctor
+````
+
+Original first-block SHA-256 (UTF-8 bytes): `db5a8fb116a1c533ddef05922dc67d66ea14750cec95e6be82f34732458cd16e`.
+
+The plan's self-score is not accepted as a quality result. A qualification in
+an evidence ledger does not make the hook or bio's unsupported cost promise safe.
+
+### Narrow fixes and rerun
+
+- Clarified that the full two-file contract applies to full-profile requests,
+  while a bio-only request remains narrow.
+- Required outer copyable fences to be longer than internal code fences.
+- Required public hook/bio/metadata phrases to match the evidence ledger;
+  private caveats cannot repair unsupported public assertions.
+- Added an unclosed-fence lint check for both deliverables plus six regressions,
+  covering backticks, tildes, longer nested fences, misleading closers and inline text.
+- Repeated the Arabic request once with the revised guidance. It returned two
+  independently copyable files (2,677 and 10,489 Unicode characters). Both pass
+  the revised lint. The hook and bio omit zero-cost promises, the local-only
+  transport limit remains, and the third uninspected project is attributed.
+  This is targeted evidence of improvement in one run, not general reliability.
+- A subsequent clarification states that missing render checks cannot earn full
+  visual credit, and broken copyable files cannot earn full reuse credit. This
+  additional wording has static review, not a separate behavioral rerun.
+
+### Rendering and remaining gates
+
+Local text-first previews of the first-pass Arabic and English copied README
+blocks were inspected on desktop and at 390px, including light/dark styles.
+These are local Markdown approximations, not GitHub's production renderer.
+The Arabic block visibly stops at its broken fence; the English draft is readable
+but too dense on mobile. Rendering is not a factual check.
+
+Before a stable release: native installation/discovery on a documented agent
+version, a second actual product, repeated varied runs (including a genuinely
+thin profile), owner feedback on useful copy, and deployment/link/render checks
+for any profile the owner actually approves. No release or compatibility badge
+was created from this round.
+
+### Public source identifiers used
+
+- https://github.com/mohamed-khairy-5i/opentrack-os
+- https://raw.githubusercontent.com/mohamed-khairy-5i/opentrack-os/main/src/app/driver/page.tsx
+- https://raw.githubusercontent.com/mohamed-khairy-5i/opentrack-os/main/package.json
+- https://github.com/mohamed-khairy-5i/trigger-doctor
+- https://raw.githubusercontent.com/mohamed-khairy-5i/trigger-doctor/main/scripts/parse_skill.py
+- https://github.com/boffti/starwire
+- https://raw.githubusercontent.com/boffti/starwire/main/docs/js/app.js
+- https://github.com/boffti/whetstone
+- https://raw.githubusercontent.com/boffti/whetstone/main/whetstone/store.py
+- https://raw.githubusercontent.com/boffti/whetstone/main/pyproject.toml
+- https://github.com/davila7/claude-code-templates
+- https://raw.githubusercontent.com/davila7/claude-code-templates/main/cli-tool/bin/create-claude-config.js
+- https://raw.githubusercontent.com/davila7/claude-code-templates/main/package.json
+- https://github.com/davila7/chaos-monkey-coding-agents
+- https://raw.githubusercontent.com/davila7/chaos-monkey-coding-agents/main/packages/fault-engine/src/engine.ts
+- https://raw.githubusercontent.com/davila7/chaos-monkey-coding-agents/main/pyproject.toml
+
+Documentation read for route/format grounding, not proof of execution:
+[Agent Skills specification](https://agentskills.io/specification),
+[Gemini CLI skills](https://geminicli.com/docs/cli/skills/),
+[Codex skills](https://developers.openai.com/codex/skills), and
+[Claude Code skills](https://code.claude.com/docs/en/skills).
