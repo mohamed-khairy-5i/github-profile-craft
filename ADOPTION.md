@@ -1,9 +1,9 @@
 # Adoption and demo plan
 
-**Status: preparation only.** Nothing here authorizes making the repository
-viewable by others, contacting people, submitting listings or posting publicly.
-The repository stays private until its owner approves a different audience.
-No campaign or star-growth experiment has been run.
+**Status: public repository; promotion remains a plan.** The owner approved
+public visibility on 2026-11-21. This is not approval to contact people, submit
+listings, post publicly elsewhere or run a campaign. No star-growth experiment
+has been run.
 
 ## Positioning worth testing
 
@@ -16,7 +16,7 @@ market demand. Evidence-first writing already has competitors, see RESEARCH.md.
 
 ## Try it without a long setup
 
-For an authorized local copy, put the complete github-profile-tuner folder in
+Clone the public repository and put the complete repoproofloom folder in
 your agent's documented skills directory. Start a fresh session if required by
 that agent. No API key or dependency installation is required by the skill.
 The optional lint command needs Python 3.
@@ -27,13 +27,13 @@ excerpt. Do not provide private client code unless its use is authorized.
 
 Ask:
 
-> Use github-profile-tuner to produce PROFILE-README.md and PROFILE-PLAN.md.
+> Use repoproofloom to produce PROFILE-README.md and PROFILE-PLAN.md.
 > Use only the supplied evidence. Lead with the useful behavior of my strongest
 > project. Separate source facts from unverified claims. Don't deploy anything.
 
 Arabic trial prompt:
 
-> استخدم github-profile-tuner وطلعلي README كامل وخطة للبايو والمشاريع المثبتة.
+> استخدم repoproofloom وطلعلي README كامل وخطة للبايو والمشاريع المثبتة.
 > اعتمد على الشغل الموجود بس، ووضح إيه المتأكد منه وإيه لسه مش متحقق.
 > عايز اللي يفتح البروفايل يفهم المشروع بيحل إيه. متغيّرش حسابي دلوقتي.
 
