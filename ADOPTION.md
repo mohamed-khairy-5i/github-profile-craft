@@ -16,7 +16,7 @@ market demand. Evidence-first writing already has competitors, see RESEARCH.md.
 
 ## Try it without a long setup
 
-Clone the public repository and put the complete repoproofloom folder in
+Clone the public repository and put the complete github-profile-craft folder in
 your agent's documented skills directory. Start a fresh session if required by
 that agent. No API key or dependency installation is required by the skill.
 The optional lint command needs Python 3.
@@ -27,13 +27,13 @@ excerpt. Do not provide private client code unless its use is authorized.
 
 Ask:
 
-> Use repoproofloom to produce PROFILE-README.md and PROFILE-PLAN.md.
+> Use github-profile-craft to produce PROFILE-README.md and PROFILE-PLAN.md.
 > Use only the supplied evidence. Lead with the useful behavior of my strongest
 > project. Separate source facts from unverified claims. Don't deploy anything.
 
 Arabic trial prompt:
 
-> استخدم repoproofloom وطلعلي README كامل وخطة للبايو والمشاريع المثبتة.
+> استخدم github-profile-craft وطلعلي README كامل وخطة للبايو والمشاريع المثبتة.
 > اعتمد على الشغل الموجود بس، ووضح إيه المتأكد منه وإيه لسه مش متحقق.
 > عايز اللي يفتح البروفايل يفهم المشروع بيحل إيه. متغيّرش حسابي دلوقتي.
 
