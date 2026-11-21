@@ -11,7 +11,10 @@ evidence-backed showcase. Not another wall of badges. Not a star generator.
 project descriptions/topics, an evidence ledger, and a verification checklist.
 Nothing changes on the actual profile until the owner approves.
 
-![Illustrative synthetic before and after, with specific project behavior and a useful next step](DEMO.svg)
+<picture>
+  <source media="(max-width: 600px)" srcset="DEMO-MOBILE.svg">
+  <img alt="Illustrative synthetic before and after, with specific project behavior and a useful next step" src="DEMO.svg">
+</picture>
 
 Illustration, not a recorded model run. [Research and comparison](RESEARCH.md) ·
 [Executed checks and limits](TEST-RESULTS.md) · [Trial and adoption plan](ADOPTION.md)
@@ -84,7 +87,7 @@ cross-agent certification or evidence of star growth.
 - `TEST-FIXTURE.md` and `TEST-RESULTS.md`: fixed input and actual test boundaries.
 - `RESEARCH.md`: sourced comparison and design decisions.
 - `ADOPTION.md`: trial prompt, proposed demo recording and measurement plan.
-- `DEMO.svg`: editable illustrative visual, not an execution recording.
+- `DEMO.svg` and `DEMO-MOBILE.svg`: editable illustrative visuals, not execution recordings.
 - `LICENSE`: MIT.
 
 ## Optional checks
